@@ -1,4 +1,4 @@
-package com.example.springboot.Book;
+package com.example.springboot.web.exception;
 
 public class BookNotFoundException extends RuntimeException {
 

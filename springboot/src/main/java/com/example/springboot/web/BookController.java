@@ -1,5 +1,9 @@
-package com.example.springboot.Book;
+package com.example.springboot.web;
 
+import com.example.springboot.persistence.model.Book;
+import com.example.springboot.web.exception.BookIdMismatchException;
+import com.example.springboot.web.exception.BookNotFoundException;
+import com.example.springboot.persistence.repo.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

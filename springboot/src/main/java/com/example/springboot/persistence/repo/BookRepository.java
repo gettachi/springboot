@@ -1,5 +1,6 @@
-package com.example.springboot.Book;
+package com.example.springboot.persistence.repo;
 
+import com.example.springboot.persistence.model.Book;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

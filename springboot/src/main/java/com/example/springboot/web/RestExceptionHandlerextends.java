@@ -1,7 +1,7 @@
-package com.example.springboot.Configure;
+package com.example.springboot.web;
 
-import com.example.springboot.Book.BookIdMismatchException;
-import com.example.springboot.Book.BookNotFoundException;
+import com.example.springboot.web.exception.BookIdMismatchException;
+import com.example.springboot.web.exception.BookNotFoundException;
 import org.hibernate.exception.ConstraintViolationException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpHeaders;

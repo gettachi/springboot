@@ -1,4 +1,4 @@
-package com.example.springboot.Book;
+package com.example.springboot.persistence.model;
 
 import lombok.Data;
 
