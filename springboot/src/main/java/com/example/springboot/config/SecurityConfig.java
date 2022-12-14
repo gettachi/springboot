@@ -37,7 +37,7 @@ public class SecurityConfig {
                 .authenticated()
                 .and()
                 .httpBasic();
-
+        http.csrf().disable();
         return http.build();
     }
     @Bean

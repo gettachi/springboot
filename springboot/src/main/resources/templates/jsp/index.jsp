@@ -1,4 +1,5 @@
-<!doctype html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd" >
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -9,14 +10,17 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/extractData.js"></script>
-
+    <script  src="js/extractData.js"></script>
 
 </head>
 <body>
-
 <div class="container">
-    <form class="row">
+    <div class="row">
+        <span class="text-center"> <h1 class="text-bg-primary">Extract Data From Image</h1></span>
+    </div>
+</div>
+<div class="container mt-1">
+    <form class="row" enctype="multipart/form-data">
         <div class ="row "></div>
         <div class="col-auto mt-1">
             <label for="staticEmail2" class="visually-hidden">Extract Data from image
@@ -24,11 +28,11 @@
             <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="">
         </div>
         <div class="col-auto">
-            <label for="inputPassword2" class="visually-hidden">Password</label>
-            <input type="file" class="form-control" id="inputPassword2" placeholder="Password">
+            <label for="fileImage" class="visually-hidden">Password</label>
+            <input type="file" name="fileImage" class="form-control" id="fileImage" placeholder="Password">
         </div>
         <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+            <button type="submit" id="btnExtractData" class="btn btn-primary mb-3">Confirm identity</button>
         </div>
     </form>
 </div>
